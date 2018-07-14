@@ -1,9 +1,10 @@
 .header{
+  background: #fff;
   .header-top{
-    height:60px;
-    line-height:60px;
+    height:50px;
+    line-height:50px;
     text-align:right;
-    padding: 0 20px;
+    padding: 0 10px;
     a{
       margin-left:30px;
     }
@@ -11,15 +12,30 @@
   .breadcrumb{
     height: 40px;
     line-height: 40px;
-    padding: 0 20px;
+    padding: 0 10px;
     border-top: 1px solid #f9c700;
     .breadcrumb-title{
-      text-align: center;
+      text-align: left;
+      font-size:18px;
+      &:after{
+        position:absolute;
+        content: '';
+        left: 5px;
+        top:35px;
+        border-top: 9px solid #fff;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+      }
     }
     .weather{
       text-align: right;
       .date{
         margin-right:10px;
+      }
+      img{
+        width: 30px;
+        height: 18px;
+        margin: -2px 4px 0 6px;
       }
     }
   }

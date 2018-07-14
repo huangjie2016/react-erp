@@ -15,7 +15,8 @@ export default class NavLeft extends React.Component {
       menuTreeNode
     })
   }
-  
+
+  // 获取后台返回的菜单递归列表，如果有子菜单children继续递归
   renderMenu = (data) => {
     return data.map(item => {
       if(item.children){
@@ -33,6 +34,7 @@ export default class NavLeft extends React.Component {
     return (
       <div>
         <div className="logo">
+          {/*指向public文件夹下的文件*/}
           <img src="/assets/logo-ant.svg" alt=""/>
           <h1>Imooc Ms</h1>
         </div>
